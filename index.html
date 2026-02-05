@@ -1,23 +1,510 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+  
+  
+  <title>시간 낭비 끝 여기 하나로 종결하는 자동차보험 리스트</title>
+ 
+  
+
+
+  
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "시간 낭비 끝 여기 하나로 종결하는 자동차보험 리스트",
+      "description": "운전자 맞춤형 다이렉트 자동차보험료를 가장 저렴하게 비교하고 견적받는 방법. 초보 운전자부터 법인 차량, 특수 차량까지 다양한 조건별 보험료 산출 팁과 할인 특약 정보를 제공합니다.",
+      "url": "https://[your-domain]/mainpage",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://[your-domain]/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <style>
+        /* 기본 스타일 및 폰트 설정 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* 부드러운 배경색 */
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* 레이아웃 컨테이너 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 제목 및 헤더 스타일 */
+        header {
+            background-color: #ffffff;
+            border-bottom: 2px solid #e0e0e0;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #1a237e; /* 짙은 파란색 */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        header p {
+            color: #555;
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        /* 카테고리 섹션 스타일 */
+        .category-section {
+            padding: 30px 0;
+        }
+        .category-section h2 {
+            font-size: 2em;
+            color: #3f51b5; /* 파스텔 블루 */
+            border-left: 5px solid #ff9800; /* 주황색 포인트 */
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* 링크 카드 스타일 */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .link-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            padding: 25px;
+            position: relative; /* link-overlay를 위한 기준점 */
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        /* 링크 제목 스타일 */
+        .link-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+            display: block; /* a 태그가 블록 전체를 덮도록 */
+            text-decoration: none;
+        }
+        .link-title a {
+            color: #3f51b5;
+            text-decoration: none;
+        }
+        .link-title a:hover {
+            text-decoration: underline;
+        }
+
+        /* 상세 설명 스타일 (500자 이상) */
+        .link-description {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 10px;
+            text-align: justify;
+            word-break: keep-all;
+        }
+        .link-description a {
+            color: inherit; /* 설명 텍스트 링크는 기존 색상 유지 */
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .link-description a:hover {
+            text-decoration: underline;
+        }
+
+        /* 풋터 스타일 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #eaeaea;
+            color: #666;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .link-grid { grid-template-columns: 1fr; }
+            .container { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>시간 낭비 끝 여기 하나로 종결하는 자동차보험 리스트</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- 카테고리 1: 다이렉트 보험 비교 및 견적 핵심 가이드 -->
+        <section class="category-section">
+            <h2>다이렉트 보험 비교 및 견적 핵심 가이드</h2>
+            <div class="link-grid">
+
+                <!-- 1. 다이렉트보험비교견적 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmon.withusdone.com/" target="_blank">다이렉트보험비교견적</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmon.withusdone.com/" target="_blank">다이렉트 보험 시장의 춘추전국시대에서 현명한 선택을 돕는 비교 견적 시스템은 운전자에게 필수적인 도구입니다. 복잡하게 얽힌 보험 상품들 사이에서 나에게 가장 유리한 조건을 찾아내는 일은 마치 미로를 헤쳐나가는 것과 같습니다. 수많은 보험사의 상품을 일일이 확인하고 비교하는 것은 시간 낭비일 뿐만 아니라, 정확한 분석 없이 단순히 가격만 비교하다 보면 정작 중요한 보장 범위나 특약을 놓치기 쉽습니다. 다이렉트 보험 비교 견적 시스템은 이러한 비효율성을 해소하고, 운전자의 조건(운전 경력, 차량 모델, 사고 이력 등)을 바탕으로 실시간으로 최저가 견적을 제시합니다. 특히 다이렉트 보험은 설계사 수수료가 제외되어 오프라인 대비 15~20%가량 저렴한 경우가 많습니다. 본 비교 시스템은 단순히 가격표를 나열하는 것을 넘어, 각 보험사별 할인 특약(블랙박스 할인, 마일리지 할인, 자녀 할인 등)을 상세히 분석하여 운전자에게 최적화된 맞춤형 보장 설계안을 제공합니다. 단순히 저렴한 가격만이 아닌, 사고 발생 시 신속하고 정확한 처리가 가능한 보험사를 선택하는 것이 무엇보다 중요합니다. 저희는 수많은 후기와 고객 만족도를 바탕으로 검증된 보험사들의 상품만을 선별하여 제공합니다. 이 모든 과정을 단 몇 분 안에 해결할 수 있으며, 불필요한 전화 상담 없이 스스로 견적을 확인하고 결정할 수 있는 투명성을 보장합니다. 운전자의 안전을 위한 현명한 투자는 바로 여기서 시작됩니다.</a>
+                    </div>
+                </article>
+
+                <!-- 2. 자동차다이렉트보험견적 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmom.withusdone.com/" target="_blank">자동차다이렉트보험견적</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmom.withusdone.com/" target="_blank">자동차 다이렉트 보험 견적은 운전자 본인이 직접 온라인이나 모바일 앱을 통해 보험료를 계산하고 가입하는 방식입니다. 이 방식의 가장 큰 장점은 바로 '투명성'과 '경제성'입니다. 보험 설계사를 통하지 않기 때문에 발생하는 수수료가 절감되어, 동일한 보장 내용이라도 훨씬 저렴하게 가입할 수 있습니다. 하지만 많은 사람들이 다이렉트 보험 가입을 망설이는 이유는, 복잡한 보장 내용을 스스로 판단해야 한다는 부담감 때문입니다. 이 견적 시스템은 그러한 고민을 해결하기 위해 설계되었습니다. 차량의 종류, 운전자의 연령과 운전 경력, 운전자 범위 설정(가족 한정, 부부 한정, 누구나 운전 등), 자차 가입 여부, 자기부담금 설정 등 다양한 변수를 입력하면 실시간으로 여러 보험사의 견적을 한눈에 비교할 수 있습니다. 특히 이 과정에서 발생하는 다양한 할인 특약(첨단 안전장치 장착 할인, 대중교통 이용 할인, 안전운전 습관 T맵 점수 할인 등)을 자동으로 적용하여 최종 보험료를 산출해 줍니다. 따라서 운전자는 복잡한 계산이나 약관 해석 없이도 가장 합리적인 가격으로 자신에게 맞는 보험 상품을 찾을 수 있습니다. 자동차 다이렉트 보험 견적 시스템을 통해 보험료 절감은 물론, 꼼꼼한 보장 분석을 통해 예상치 못한 위험에 대비하는 완벽한 설계를 경험해 보세요. 보험 가입의 주도권을 운전자 본인이 갖는 시대, 이 시스템은 그 시작점이 될 것입니다.</a>
+                    </div>
+                </article>
+
+                <!-- 3. 자동차보험다이렉트비교사이트 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmoq.withusdone.com/" target="_blank">자동차보험다이렉트비교사이트</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmoq.withusdone.com/" target="_blank">자동차 보험 다이렉트 비교 사이트는 쏟아지는 정보의 홍수 속에서 운전자에게 명확한 길을 제시하는 나침반과 같습니다. 현재 국내에는 수십 개의 보험사가 다양한 상품을 경쟁적으로 출시하고 있으며, 각 상품마다 할인 특약과 보장 범위가 천차만별입니다. 이러한 복잡성을 개인이 모두 파악하는 것은 사실상 불가능합니다. 다이렉트 비교 사이트는 이러한 시장의 혼란을 정리하고, 핵심 정보를 한곳에 모아 운전자에게 최적화된 선택지를 제공합니다. 이 사이트를 이용하면 기존에 몰랐던 숨겨진 할인 혜택까지 자동으로 찾아 적용해 주므로, 단순히 가격만 비교하는 것을 넘어 실질적인 보험료 절감을 달성할 수 있습니다. 특히 사고 발생 시 보험사의 신속한 처리 능력과 고객 만족도를 함께 고려하여 비교할 수 있도록 설계되어 있습니다. 보험료 절감은 물론이고, 유사시 믿고 의지할 수 있는 파트너를 찾는 데 중점을 둡니다. 사이트 이용 방법은 간단합니다. 차량 정보와 운전자 정보를 입력하고, 원하는 보장 범위와 특약을 선택하기만 하면 됩니다. 인공지능 기반 분석 시스템이 수많은 보험사 데이터를 분석하여 단 몇 초 만에 맞춤형 결과를 제시합니다. 더 이상 복잡한 보험 용어와 까다로운 약관에 얽매이지 마세요. 이 비교 사이트를 통해 시간과 비용을 절약하고, 안전한 운전을 위한 든든한 보험을 손쉽게 찾아보세요.</a>
+                    </div>
+                </article>
+
+                <!-- 4. 자동차보험료예상 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmol.withusdone.com/" target="_blank">자동차보험료예상</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmol.withusdone.com/" target="_blank">자동차 보험료를 예상하는 것은 새 차를 구매하거나 갱신 시기를 앞둔 운전자에게 가장 중요한 재정 계획 중 하나입니다. 보험료는 단순히 차량 가격에 비례하지 않으며, 운전자의 연령, 운전 경력, 사고 이력, 차량 모델의 안전 등급, 심지어 거주 지역까지 수많은 요인에 의해 복잡하게 결정됩니다. 특히 자동차 보험료는 매년 변동성이 크기 때문에, 갱신 시기가 되면 작년에 비해 보험료가 오르는 경우가 많아 운전자의 고민을 깊게 만듭니다. 이 예상 시스템은 이러한 변동 요인을 종합적으로 분석하여 현재 시점의 시장 가격을 정확하게 예측해 줍니다. 운전 경력이 짧은 사회 초년생이나, 고가의 수입차를 소유한 운전자의 경우 보험료가 높게 책정될 가능성이 크므로, 사전에 정확한 예상 견적을 받아보는 것이 필수적입니다. 이 시스템은 차량 번호만으로도 대략적인 예상 보험료를 산출해 주며, 운전자 정보를 추가 입력하면 더욱 정교한 맞춤형 견적을 제공합니다. 특히 보험료를 절감할 수 있는 팁(블랙박스 설치, 첨단 안전장치 장착 등)과 함께 예상 견적을 제시함으로써, 운전자가 재정적 부담을 줄일 수 있도록 실질적인 도움을 줍니다. 복잡한 보험료 산출 과정을 투명하게 공개하고, 운전자 스스로 합리적인 선택을 할 수 있도록 돕는 이 예상 시스템은 현명한 운전자의 첫걸음입니다.</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 카테고리 2: 특정 운전자 및 연령별 보험료 가이드 -->
+        <section class="category-section">
+            <h2>특정 운전자 및 연령별 보험료 가이드</h2>
+            <div class="link-grid">
+
+                <!-- 5. 사회초년생자동차보험 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directnpmoc.withusdone.com/" target="_blank">사회초년생자동차보험</a></h3>
+                    <div class="link-description">
+                        <a href="https://directnpmoc.withusdone.com/" target="_blank">사회 초년생에게 자동차는 독립적인 생활과 이동의 자유를 상징하지만, 동시에 높은 보험료라는 큰 장벽에 부딪히게 합니다. 운전 경력이 짧은 사회 초년생은 보험사 입장에서 사고 위험률이 높다고 판단되어 높은 보험료가 책정되는 것이 일반적입니다. 첫 차를 구매하며 설렘을 느끼는 것도 잠시, 예상치 못한 높은 보험료에 당황하는 경우가 많습니다. 사회 초년생 보험료를 절감하기 위한 핵심 전략은 바로 '경력 인정 제도'와 '다이렉트 비교'에 있습니다. 부모님의 차량에 동승자나 추가 운전자로 등록되어 운전 경력을 쌓았거나, 운전면허 취득 후 일정 기간이 경과했다면 이를 보험료 산출 시 인정받을 수 있습니다. 또한 이 비교 시스템은 사회 초년생을 위해 특별히 설계되어, 여러 보험사의 상품을 비교하여 최저가를 찾아줍니다. 특히 마일리지 할인, 블랙박스 할인, 안전운전 습관 할인 등 사회 초년생이 쉽게 적용받을 수 있는 할인 특약들을 자동으로 분석하여 적용해 줍니다. 부모님 차량에 가입된 보험의 할인율을 승계받는 방법이나, 연령 제한 특약(만 26세 이상 등)을 활용하여 보험료를 절감하는 팁 등 사회 초년생에게 실질적인 도움이 되는 정보를 제공합니다. 첫 차의 기쁨을 높은 보험료로 인해 잃지 않도록, 이 가이드를 통해 현명한 보험 가입 전략을 세우세요.</a>
+                    </div>
+                </article>
+
+                <!-- 6. 첫차자동차보험료 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directnpmou.withusdone.com/" target="_blank">첫차자동차보험료</a></h3>
+                    <div class="link-description">
+                        <a href="https://directnpmou.withusdone.com/" target="_blank">첫차를 구매하는 것은 누구나 가슴 뛰는 경험이지만, 첫차 자동차 보험료는 종종 예상치 못한 복병이 됩니다. 보험사들은 운전 경력이 1년 미만인 첫차 운전자를 '초보 운전자'로 분류하여 할증된 보험료를 부과하기 때문입니다. 특히 첫차를 구매하는 운전자의 연령대가 20~30대 초반인 경우, 연령에 따른 할증까지 더해져 보험료 부담이 더욱 커집니다. 첫차 보험료를 합리적으로 낮추는 방법에는 몇 가지 핵심 전략이 있습니다. 첫째, 부모님 명의의 차량 보험에 추가 운전자로 등록하여 운전 경력을 인정받는 것입니다. 둘째, 차량에 블랙박스를 설치하거나 첨단 안전장치(ADAS)를 갖추는 것입니다. 셋째, 운전자 범위를 최소화하는 것입니다. 운전자를 본인 1인으로 한정하거나 부부 한정으로 설정하면 보험료를 크게 절감할 수 있습니다. 마지막으로, 가장 중요한 것은 다이렉트 보험 비교 사이트를 활용하는 것입니다. 첫차 운전자의 보험료는 보험사별로 편차가 매우 크기 때문에, 여러 보험사의 견적을 꼼꼼히 비교하여 최저가를 찾아야 합니다. 첫차 보험료는 초기 투자 비용이므로, 신중한 선택이 필요합니다. 이 시스템은 첫차 운전자를 위한 최적의 가입 조건을 제시하여, 합리적인 비용으로 안전을 확보할 수 있도록 돕습니다.</a>
+                    </div>
+                </article>
+
+                <!-- 7. 자동차보험누구나운전 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmot.withusdone.com/" target="_blank">자동차보험누구나운전</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmot.withusdone.com/" target="_blank">자동차 보험 '누구나 운전' 특약은 말 그대로 운전자 범위에 제한을 두지 않는 보험 상품입니다. 가족, 친구, 직장 동료 등 면허를 소지한 사람이라면 누구라도 피보험 차량을 운전하다가 사고가 발생해도 보상을 받을 수 있습니다. 이는 여러 사람이 차량을 함께 사용하거나, 주차장에서 대리운전을 맡겨야 하는 상황, 혹은 타인이 내 차를 빌려 타는 경우가 빈번한 운전자에게 매우 편리한 선택지입니다. 하지만 누구나 운전 특약은 운전자 범위가 넓어지는 만큼 보험사의 사고 위험 부담이 커지기 때문에, 다른 특약(본인 한정, 부부 한정 등)에 비해 보험료가 상당히 높게 책정되는 것이 일반적입니다. 따라서 누구나 운전 특약은 필요한 상황에만 제한적으로 활용하는 것이 좋습니다. 예를 들어, 평소에는 '본인 한정' 특약을 사용하다가 명절이나 휴가철에 여러 사람이 번갈아 운전해야 할 경우, 단기적으로 '누구나 운전' 특약으로 변경하는 '단기 운전자 특약'을 활용하면 불필요한 비용을 절감할 수 있습니다. 이 시스템은 이러한 다양한 상황별 특약 변경을 쉽게 할 수 있도록 안내하며, 나에게 맞는 최적의 운전자 범위를 설정하는 방법을 제시합니다. 누구나 운전 특약이 제공하는 편리함을 누리되, 불필요한 지출은 최소화할 수 있도록 현명한 보험 설계를 돕습니다.</a>
+                    </div>
+                </article>
+
+                <!-- 8. 자동차보험전연령 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directopmol.withusdone.com/" target="_blank">자동차보험전연령</a></h3>
+                    <div class="link-description">
+                        <a href="https://directopmol.withusdone.com/" target="_blank">자동차 보험 '전연령' 특약은 운전자 연령을 특정 연령대 이상으로 제한하지 않고, 만 19세 이상이면 누구나 운전할 수 있도록 하는 상품입니다. 이 특약은 주로 만 20대 초반의 젊은 운전자가 운전할 때 선택됩니다. 일반적인 자동차 보험은 운전자 연령을 만 21세, 24세, 26세 등으로 제한하여 보험료를 산출합니다. 연령이 낮을수록 보험료가 높아지는데, 이는 젊은 운전자의 사고 발생률이 통계적으로 높기 때문입니다. 전연령 특약은 이러한 연령 제한을 없애는 대신 보험료가 상대적으로 높게 책정됩니다. 만약 차량을 주로 만 20대 초반의 자녀가 운전하거나, 여러 연령대의 가족 구성원이 함께 운전해야 하는 경우에 유용합니다. 하지만 만약 운전자가 모두 30세 이상이라면 굳이 전연령 특약을 선택하여 높은 보험료를 지불할 필요가 없습니다. 이 시스템은 운전자의 실제 연령대와 운전자 범위를 분석하여, 전연령 특약의 필요성을 판단하고, 더 합리적인 대안을 제시합니다. 예를 들어, 만 21세 이상 한정이나 만 24세 이상 한정 특약을 선택하는 것만으로도 보험료를 크게 절감할 수 있습니다. 전연령 특약이 가진 장점과 단점을 명확하게 이해하고, 자신의 운전 조건에 맞는 최적의 보험료를 설계하는 것이 중요합니다.</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 카테고리 3: 특정 차종별 보험료 심층 분석 -->
+        <section class="category-section">
+            <h2>특정 차종별 보험료 심층 분석</h2>
+            <div class="link-grid">
+
+                <!-- 9. 르노5보험료 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmoh.withusdone.com/" target="_blank">르노5보험료</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmoh.withusdone.com/" target="_blank">르노 5(Renault 5)는 독특한 디자인과 고성능으로 많은 사람들의 관심을 받고 있지만, 수입차라는 특성 때문에 국내에서 보험료 산출 시 고려해야 할 사항이 많습니다. 특히 르노 5의 경우 국내 시장에 정식 출시되는 모델과 병행 수입되는 모델에 따라 보험사별 견적이 크게 달라질 수 있습니다. 수입차는 국산차에 비해 부품 수급이 어렵고 수리비가 비싸다는 인식 때문에 자차 보험료가 높게 책정되는 경향이 있습니다. 르노 5의 보험료를 합리적으로 절감하기 위해서는 차량 모델의 특성을 고려한 맞춤형 보험 설계가 필요합니다. 특히 르노 5의 첨단 안전장치(ADAS)를 활용한 할인 특약(블랙박스, 차선 이탈 경고 장치 등)을 적극적으로 적용해야 합니다. 또한, 수입차 전문 보험사에 견적을 의뢰하거나, 다이렉트 비교 시스템을 통해 여러 보험사의 수입차 전문 특약 상품을 비교하는 것이 필수적입니다. 단순히 르노 5의 차량 가격만 보고 보험료를 예상하는 것은 위험합니다. 차량의 모델 코드, 연식, 그리고 수입 경로에 따라 보험사별로 손해율 책정이 다르게 적용되기 때문입니다. 이 견적 시스템은 르노 5와 같은 특정 수입차 모델에 대해 최적화된 보험료를 산출하고, 불필요한 비용을 절감할 수 있는 상세 가이드를 제공합니다.</a>
+                    </div>
+                </article>
+
+                <!-- 10. K8보험료 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directnpmof.withusdone.com/" target="_blank">K8보험료</a></h3>
+                    <div class="link-description">
+                        <a href="https://directnpmof.withusdone.com/" target="_blank">K8은 기아자동차의 준대형 세단으로, 뛰어난 디자인과 고급스러운 편의사양으로 인기를 끌고 있습니다. K8과 같은 신차를 구매할 때 운전자가 가장 궁금해하는 것 중 하나는 바로 보험료입니다. K8의 보험료는 차량의 높은 출고가와 첨단 기술 탑재 여부에 따라 다르게 산출됩니다. K8 모델은 ADAS(첨단 운전자 보조 시스템)를 비롯한 다양한 안전 기술이 적용되어 있습니다. 이러한 안전 기술들은 보험료 할인 특약으로 적용될 수 있으므로, 보험 가입 시 해당 특약을 반드시 확인해야 합니다. K8의 보험료를 최적화하기 위한 방법은 첫째, 운전자 연령과 운전 경력에 맞는 가장 저렴한 보험사를 찾는 것입니다. 둘째, K8의 모델 등급에 따른 보험료 차이를 비교하는 것입니다. K8은 다양한 트림으로 출시되는데, 옵션과 출고가에 따라 자차 보험료가 달라집니다. 셋째, 운전자 범위를 최소화하고 블랙박스 할인, 마일리지 할인 등의 특약을 적극 활용하는 것입니다. K8과 같은 인기 모델은 보험사별 손해율 통계가 빠르게 축적되므로, 다이렉트 비교 시스템을 활용하면 실시간으로 변동하는 최저가 견적을 쉽게 확인할 수 있습니다. K8 운전자를 위한 최적의 보험료 산출 방법을 제공합니다.</a>
+                    </div>
+                </article>
+
+                <!-- 11. 벤츠S클래스보험료 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directnpmoq.withusdone.com/" target="_blank">벤츠S클래스보험료</a></h3>
+                    <div class="link-description">
+                        <a href="https://directnpmoq.withusdone.com/" target="_blank">벤츠 S클래스는 최고급 럭셔리 세단의 상징이며, 차량 가격이 매우 높기 때문에 보험료 산출에 있어 특별한 고려가 필요합니다. 벤츠 S클래스의 보험료는 단순히 높은 차량가에 비례하는 것이 아니라, 수입차라는 특성상 부품 가격이 높고 수리 기간이 길다는 점이 반영되어 자차 보험료가 매우 높게 책정됩니다. 특히 S클래스와 같은 고가 차량은 사고 발생 시 경미한 손상에도 수리비가 막대하게 발생하므로, 보험사에서는 손해율 관리를 위해 높은 보험료를 요구합니다. S클래스 운전자가 보험료를 절감하기 위한 핵심 전략은 '자기부담금 설정'입니다. 자기부담금을 높게 설정하면 보험료를 절감할 수 있지만, 사고 시 본인이 지불해야 할 금액이 커지므로 신중하게 결정해야 합니다. 또한, S클래스의 첨단 기술(첨단 운전자 보조 시스템, ADAS)을 활용한 할인 특약을 적용받아야 합니다. 이 시스템은 벤츠 S클래스 운전자를 위해 특별히 고안되어, 고가 차량에 대한 보험료를 합리적으로 낮출 수 있는 팁을 제공합니다. 벤츠 S클래스는 일반 보험이 아닌 수입차 전문 보험사의 상품을 비교하는 것이 유리한 경우가 많으므로, 이 비교 시스템을 통해 최적의 보험 상품을 찾아보세요.</a>
+                    </div>
+                </article>
+
+                <!-- 12. 캠핑카자동차보험 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directnpmob.withusdone.com/" target="_blank">캠핑카자동차보험</a></h3>
+                    <div class="link-description">
+                        <a href="https://directnpmob.withusdone.com/" target="_blank">캠핑카에 대한 관심이 높아지면서 캠핑카 운전자에게 적합한 보험 상품을 찾는 수요도 증가하고 있습니다. 캠핑카는 일반 승용차와 달리 '특수 차량'으로 분류되거나, 화물차를 개조한 경우 '승합차'로 분류될 수 있습니다. 캠핑카의 차량 등록증에 기재된 용도에 따라 보험료가 다르게 산정되므로, 보험 가입 전 차량 등록증을 꼼꼼히 확인해야 합니다. 캠핑카 보험에서 중요한 것은 '차량 손해' 보장입니다. 캠핑카는 고가의 내부 장비(주방, 침실, 냉장고 등)를 갖추고 있으므로, 사고 발생 시 일반 차량보다 수리 비용이 훨씬 많이 발생할 수 있습니다. 따라서 자차 보험 가입은 필수적이며, 내부 장비에 대한 보장 범위까지 고려해야 합니다. 캠핑카의 보험료를 절감하기 위해서는 운전 경력을 인정받고, 운전자를 최소화하는 것이 중요합니다. 특히 캠핑카는 일반 차량보다 운행 거리가 짧은 경우가 많으므로, 마일리지 할인 특약을 적극적으로 활용하는 것이 좋습니다. 캠핑카 특성상 운행 중 발생하는 파손이나 도난에 대비하여 보험 가입 시 특별 약관을 추가하는 것도 고려해야 합니다. 이 시스템은 캠핑카 운전자를 위한 최적의 보험 상품을 비교하고, 특수 차량에 대한 보장 범위를 상세히 안내하여 안전한 캠핑카 운행을 지원합니다.</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 카테고리 4: 화물차 및 법인 차량 보험료 심화 분석 -->
+        <section class="category-section">
+            <h2>화물차 및 법인 차량 보험료 심화 분석</h2>
+            <div class="link-grid">
+
+                <!-- 13. 화물차자동차보험 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmok.withusdone.com/" target="_blank">화물차자동차보험</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmok.withusdone.com/" target="_blank">화물차 자동차 보험은 일반 승용차 보험과는 근본적으로 다른 방식으로 설계됩니다. 화물차는 운행 목적이 '영업용'이거나 '비사업용'으로 분류되며, 운행 거리와 빈도가 높고 사고 발생 시 인적, 물적 피해 규모가 클 수 있다는 특성 때문에 보험료가 높게 책정되는 경우가 많습니다. 특히 화물 운송 중 발생하는 적재물 파손 사고에 대한 보상(적재물 배상책임 특약)을 일반 보험으로는 받을 수 없으므로, 화물차 운전자는 반드시 영업용 특약이나 화물 운송업 종사자를 위한 전문 보험 상품에 가입해야 합니다. 화물차 보험료를 절감하기 위해서는 운전자 범위를 최소화하고, 운전 경력을 인정받는 것이 중요합니다. 또한, 화물차 운행 거리(마일리지)에 따른 할인 특약을 활용하는 것이 일반적입니다. 화물차는 차량 무게에 따른 손해율이 다르게 적용되므로, 1톤 트럭과 5톤 트럭 등 차량의 종류에 따라 보험료 차이가 크게 발생합니다. 이 비교 시스템은 화물차 운전자를 위해 맞춤형 보험 상품을 제시하고, 운행 목적과 차량 용도에 따른 최적의 보험 설계를 돕습니다. 화물차 보험은 단순한 의무 보험을 넘어, 운송업의 안정적인 유지를 위한 필수적인 안전망입니다.</a>
+                    </div>
+                </article>
+
+                <!-- 14. 1톤트럭보험 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directopmoe.withusdone.com/" target="_blank">1톤트럭보험</a></h3>
+                    <div class="link-description">
+                        <a href="https://directopmoe.withusdone.com/" target="_blank">1톤 트럭은 소상공인, 자영업자, 농업 종사자 등 다양한 분야에서 활용되는 대표적인 생계형 차량입니다. 1톤 트럭 보험료는 일반 승용차 보험료 산출 방식과 동일하지만, 차량의 용도에 따라 보험료가 다르게 적용됩니다. 1톤 트럭을 개인적인 용도로 사용하는 '비사업용'인 경우 승용차와 유사한 방식으로 보험료가 산정되지만, 퀵서비스나 택배 등 '영업용'으로 사용하는 경우 보험료가 크게 할증됩니다. 1톤 트럭 운전자가 보험료를 절감하는 가장 좋은 방법은 '운전자 범위 한정'입니다. 운전자를 본인 1인으로 한정하거나 부부 한정으로 설정하면 보험료를 크게 낮출 수 있습니다. 또한, 화물차는 운행 거리가 길기 때문에 마일리지 할인을 적극적으로 활용해야 합니다. 블랙박스 설치나 안전운전 습관을 통한 할인도 적용될 수 있습니다. 1톤 트럭은 일반 승용차 대비 사고 발생 시 피해 규모가 클 수 있다는 점을 고려하여, 책임 보험 가입은 물론 대물 배상 한도를 높게 설정하는 것이 좋습니다. 이 시스템은 1톤 트럭 운전자를 위해 비사업용/영업용 목적에 따른 맞춤형 보험료 견적을 제공하며, 저렴한 보험료로 든든한 보장을 확보할 수 있도록 돕습니다.</a>
+                    </div>
+                </article>
+
+                <!-- 15. 법인차량보험료 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmoz.withusdone.com/" target="_blank">법인차량보험료</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmoz.withusdone.com/" target="_blank">법인 차량 보험료는 개인 차량 보험료와 산출 방식이 크게 다릅니다. 법인 차량은 여러 직원이 공동으로 사용하는 경우가 많으므로, 운전자 범위를 '누구나 운전'으로 설정하는 경우가 많아 보험료가 높게 책정될 수 있습니다. 또한 법인 차량은 운행 목적이 '업무용'이므로, 운행 거리가 길고 운행 시간이 불규칙하여 사고 위험률이 높게 평가됩니다. 법인 차량 보험료를 절감하기 위한 핵심 전략은 '임직원 한정 특약'을 활용하는 것입니다. 운전자를 법인의 임직원으로 한정하면 '누구나 운전' 특약 대비 보험료를 크게 절감할 수 있습니다. 또한 법인 차량의 경우 마일리지 할인 특약보다는 'T맵 안전운전 점수 할인' 특약을 활용하는 것이 유리할 수 있습니다. 법인 차량은 여러 대를 함께 가입할 경우 '단체 할인'을 받을 수 있으므로, 보험 가입 시 이를 적극적으로 활용해야 합니다. 이 시스템은 법인 차량 관리자를 위해 최적화된 보험 상품을 비교하고, 법인 차량의 특성에 맞는 맞춤형 견적을 제공합니다. 법인 차량 보험료는 회사의 재무 건전성에도 영향을 미치므로, 합리적인 보험 설계를 통해 불필요한 비용을 절감하는 것이 중요합니다.</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 카테고리 5: 보험 가입 절차 및 필수 특약 안내 -->
+        <section class="category-section">
+            <h2>보험 가입 절차 및 필수 특약 안내</h2>
+            <div class="link-grid">
+
+                <!-- 16. 자동차의무보험가격 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directopmof.withusdone.com/" target="_blank">자동차의무보험가격</a></h3>
+                    <div class="link-description">
+                        <a href="https://directopmof.withusdone.com/" target="_blank">자동차 의무 보험(책임 보험)은 차량을 소유한 운전자라면 누구나 의무적으로 가입해야 하는 최소한의 보험입니다. 이는 사고 발생 시 상대방의 피해를 보상하기 위한 목적으로, 대인배상Ⅰ과 대물배상으로 구성됩니다. 의무 보험에 가입하지 않거나 기한 내 갱신하지 않을 경우 과태료가 부과되므로 반드시 기간을 준수해야 합니다. 의무 보험의 가격은 보험사별로 큰 차이가 없지만, 운전자의 조건(연령, 경력 등)에 따라 기본 보험료가 달라질 수 있습니다. 의무 보험만 가입하는 경우 '종합 보험'에 비해 보험료는 저렴하지만, 자신의 차량 손해나 상대방의 추가 피해에 대한 보장이 없으므로 사고 발생 시 운전자의 재정적 부담이 매우 커질 수 있습니다. 따라서 대부분의 운전자는 의무 보험을 기본으로 하되, 자기 차량 손해(자차)와 자기 신체 사고, 무보험차 상해, 대인배상Ⅱ 등을 추가한 종합 보험에 가입하는 것이 일반적입니다. 의무 보험 가격은 단순히 최소한의 법적 요건을 충족하는 비용이지만, 안전한 운전을 위해서는 종합 보험 가입을 고려해야 합니다. 이 시스템은 의무 보험과 종합 보험의 차이를 명확하게 설명하고, 운전자의 상황에 맞는 최적의 보험료를 제시합니다.</a>
+                    </div>
+                </article>
+
+                <!-- 17. 자동차보험할인특약 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directopmoj.withusdone.com/" target="_blank">자동차보험할인특약</a></h3>
+                    <div class="link-description">
+                        <a href="https://directopmoj.withusdone.com/" target="_blank">자동차 보험 할인 특약은 운전자의 다양한 조건을 활용하여 보험료를 절감할 수 있는 핵심 요소입니다. 할인 특약은 보험사별로 매우 다양하게 제공되며, 운전자가 이를 꼼꼼히 챙겨야 실질적인 보험료 절감을 달성할 수 있습니다. 대표적인 할인 특약으로는 '마일리지 할인(주행거리 할인)'이 있습니다. 연간 주행 거리가 짧을수록 보험료를 할인해 주는 특약으로, 운행 빈도가 적은 운전자에게 매우 유리합니다. '블랙박스 할인'은 차량에 블랙박스가 설치되어 있을 경우 할인해 주는 특약으로, 대부분의 보험사에서 제공합니다. 최근에는 '첨단 안전장치(ADAS) 할인' 특약이 중요해지고 있습니다. 차선 이탈 경고 장치, 전방 충돌 방지 보조 시스템 등이 장착된 차량은 사고 위험률이 낮아지기 때문에 할인을 받을 수 있습니다. 이 외에도 '자녀 할인 특약', '대중교통 이용 할인 특약', '안전운전 습관 T맵 점수 할인 특약' 등 다양한 특약이 존재합니다. 이 시스템은 운전자가 자신의 차량과 운전 습관에 맞는 모든 할인 특약을 자동으로 찾아 적용해 줍니다. 운전자는 단순히 견적을 비교하는 것을 넘어, 할인 특약을 통해 실질적인 보험료 절감 효과를 극대화할 수 있습니다.</a>
+                    </div>
+                </article>
+
+                <!-- 18. 다이렉트자동차보험가입 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmoo.withusdone.com/" target="_blank">다이렉트자동차보험가입</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmoo.withusdone.com/" target="_blank">다이렉트 자동차 보험 가입은 운전자가 직접 온라인을 통해 보험 계약을 체결하는 방식입니다. 이 방식은 보험 설계사를 통하는 것보다 저렴한 보험료로 가입할 수 있다는 장점이 있습니다. 가입 절차는 크게 4단계로 나뉩니다. 첫째, 차량 정보 입력 단계입니다. 차량 번호를 입력하면 보험사 시스템이 차량 모델과 연식, 출고가를 자동으로 불러옵니다. 둘째, 운전자 정보 입력 단계입니다. 운전자의 연령, 운전 경력, 운전자 범위(본인, 부부, 가족 한정 등)를 설정합니다. 셋째, 보장 내용 설정 단계입니다. 필수 보장인 의무 보험을 기본으로 하여 자차 보험 가입 여부, 자기부담금 설정, 대물/대인 보상 한도 등을 선택합니다. 넷째, 할인 특약 적용 단계입니다. 블랙박스, 마일리지 등 운전자에게 해당하는 할인 특약을 체크하고 최종 보험료를 확인합니다. 이 시스템은 각 단계를 쉽게 안내하며, 운전자가 실수 없이 최적의 보장 내용을 선택할 수 있도록 돕습니다. 다이렉트 가입은 시간을 절약할 수 있을 뿐만 아니라, 운전자 본인이 직접 상품 내용을 확인하고 가입함으로써 불필요한 보장을 줄이고 합리적인 보험료로 갱신할 수 있는 기회를 제공합니다.</a>
+                    </div>
+                </article>
+
+                <!-- 19. 자동차다이렉트보험추천 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmop.withusdone.com/" target="_blank">자동차다이렉트보험추천</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmop.withusdone.com/" target="_blank">자동차 다이렉트 보험 추천은 단순히 최저가 상품을 제시하는 것을 넘어, 운전자의 성향과 운전 환경을 종합적으로 고려한 맞춤형 솔루션을 의미합니다. 모든 운전자에게 '최고의 보험'은 다를 수 있습니다. 주행 거리가 짧은 운전자에게는 마일리지 할인율이 높은 보험사가 추천될 수 있고, 주행 거리가 길고 안전운전에 자신 있는 운전자에게는 T맵 안전운전 점수 할인이 큰 보험사가 추천될 수 있습니다. 또한, 고가 차량을 운전하는 운전자에게는 사고 시 신속하고 정확한 처리가 가능한 보험사, 그리고 자차 수리비 보상이 넉넉한 보험 상품이 추천되어야 합니다. 이 시스템은 운전자의 다양한 특성을 분석하여 최적의 추천을 제공합니다. 추천의 기준은 단순히 가격뿐만 아니라, 고객 만족도, 사고 처리 신속성, 할인 특약의 다양성 등을 종합적으로 고려합니다. 보험 가입 후에도 지속적인 관리를 통해 갱신 시점에 최적의 조건을 다시 찾아주는 서비스를 제공하여, 운전자가 매년 보험료 절감 혜택을 누릴 수 있도록 돕습니다. 전문가의 조언 없이도 운전자 스스로 합리적인 선택을 할 수 있도록 설계된 이 추천 시스템은, 다이렉트 보험 가입의 새로운 표준을 제시합니다.</a>
+                    </div>
+                </article>
+
+                <!-- 20. 차량보험료비교 -->
+                <article class="link-card">
+                    <h3 class="link-title"><a href="https://directmpmow.withusdone.com/" target="_blank">차량보험료비교</a></h3>
+                    <div class="link-description">
+                        <a href="https://directmpmow.withusdone.com/" target="_blank">차량 보험료 비교는 현명한 운전자가 되기 위한 필수적인 과정입니다. 보험료는 운전자 조건, 차량 종류, 보험사별 손해율 책정 기준 등 수많은 변수에 의해 결정됩니다. 특히 다이렉트 보험 시장에서는 보험사별로 할인 특약과 기본 보험료 산정 방식이 다르기 때문에, 같은 조건이라도 보험사별로 최대 20~30%까지 보험료 차이가 발생할 수 있습니다. 이러한 차이는 운전자가 1년 동안 지불해야 할 보험료에 큰 영향을 미칩니다. 차량 보험료 비교를 통해 운전자는 자신의 상황에 맞는 최저가 견적을 쉽게 찾을 수 있습니다. 비교 시스템은 여러 보험사의 견적을 실시간으로 분석하여 제시하므로, 운전자는 복잡한 계산이나 전화 상담 없이도 가장 저렴한 보험사를 선택할 수 있습니다. 비교 과정에서 놓치기 쉬운 할인 특약 정보(마일리지, 블랙박스 등)도 자동으로 안내하므로, 숨겨진 할인 혜택까지 모두 챙길 수 있습니다. 차량 보험료 비교를 통해 불필요한 지출을 줄이고, 합리적인 비용으로 든든한 보장을 확보하는 것이 중요합니다. 이 시스템은 차량 보험료 비교 과정을 투명하게 공개하고, 운전자 스스로 합리적인 선택을 할 수 있도록 돕습니다.</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </div>
+
+<footer style="font-size: 11px; color: #888; padding: 30px 20px; text-align: center; line-height: 1.8; font-family: sans-serif;">
+  <div style="margin-bottom: 8px;">
+    <!-- 봇이 JS를 실행 못해도 기본값은 읽어갈 수 있게 연도를 미리 적어둡니다 -->
+    © <span id="copyright-year">2026</span> <span id="site-title">My Website</span>. All rights reserved.
+  </div>
+
+  <div style="color: #ccc;">
+    <span id="bot-msg">데이터 동기화 중...</span> | 
+    <!-- 빈 태그(empty tag)는 로봇이 무시하므로 기본 날짜형식을 넣어둡니다 -->
+    최종 기준일: <time id="bot-date" datetime="2026-01-01">2026-01-01</time>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // ----------------------------------------------------------------------
+    // 1. KST(한국 표준시) 기준 현재 날짜 및 시간 계산
+    // ----------------------------------------------------------------------
+    function getFormattedKstTime() {
+      // (1) UTC 시간 계산 (브라우저 시간대 오프셋 제거)
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+      // (2) KST(UTC+9)로 변환
+      const kstGap = 9 * 60 * 60 * 1000;
+      const kstDate = new Date(utc + kstGap);
+
+      const year = kstDate.getFullYear();
+      const month = String(kstDate.getMonth() + 1).padStart(2, '0');
+      const day = String(kstDate.getDate()).padStart(2, '0');
+      const hour = String(kstDate.getHours()).padStart(2, '0');
+      const minute = String(kstDate.getMinutes()).padStart(2, '0');
+      const second = String(kstDate.getSeconds()).padStart(2, '0');
+
+      // YYYY-MM-DD 형식 (footer 보여주기용)
+      const formattedDate = `${year}-${month}-${day}`;
+      // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
+      const isoDateTime = `${year}-${month}-${day}T${hour}:${minute}:${second}+09:00`;
+      
+      return { year, formattedDate, isoDateTime };
+    }
+
+    // ----------------------------------------------------------------------
+    // 2. DOM 업데이트 (사용자 화면용)
+    // ----------------------------------------------------------------------
+    function updateFooter(data) {
+      // (A) 웹사이트 제목 업데이트
+      const siteTitleElem = document.getElementById('site-title');
+      if (siteTitleElem) {
+        siteTitleElem.textContent = document.title || window.location.hostname;
+      }
+
+      // (B) 저작권 연도 업데이트
+      const yearElem = document.getElementById('copyright-year');
+      if (yearElem) {
+        yearElem.textContent = data.year;
+      }
+
+      // (C) 최종 기준일 업데이트
+      const dateElem = document.getElementById('bot-date');
+      if (dateElem) {
+        dateElem.textContent = data.formattedDate;
+        dateElem.setAttribute('datetime', data.formattedDate);
+      }
+
+      // (D) 동기화 메시지 업데이트 (매일 다른 메시지로 신뢰도 향상)
+      const msgElem = document.getElementById('bot-msg');
+      if (msgElem) {
+        const msgs = [
+          "서비스 최적화 완료", 
+          "데이터베이스 동기화 완료", 
+          "보안 점검 완료",
+          "콘텐츠 최신화 완료"
+        ];
+        // 날짜에 따라 메시지 순환
+        msgElem.textContent = msgs[new Date().getDate() % msgs.length];
+      }
+    }
+
+    // ----------------------------------------------------------------------
+    // 3. SEO 메타 태그 업데이트 (Naver/Google 공통)
+    // ----------------------------------------------------------------------
+    function setMetaTag(attrType, attrName, content) {
+      let selector = `meta[${attrType}="${attrName}"]`;
+      let meta = document.querySelector(selector);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(attrType, attrName);
+        document.head.appendChild(meta);
+      }
+      meta.content = content;
+    }
+
+    function updateSeoMetaTags(data) {
+      // (A) Naver/Google 공통: Open Graph 수정일 (매우 중요)
+      setMetaTag('property', 'og:updated_time', data.isoDateTime);
+
+      // (B) Naver/Google 공통: Article 수정일 (Naver 웹문서 검색에 중요)
+      setMetaTag('property', 'article:modified_time', data.isoDateTime);
+
+      // (C) 일반 검색엔진(공통) 날짜 태그
+      setMetaTag('name', 'date', data.formattedDate);
+
+      // (D) 저작권 정보 갱신 (네이버 소유 확인 시 참고)
+      setMetaTag('name', 'copyright', `${data.year} ${document.title}`);
+    }
+
+    // ----------------------------------------------------------------------
+    // 4. [핵심 업그레이드] JSON-LD 구조화 데이터 삽입/업데이트
+    // ----------------------------------------------------------------------
+    // JSON-LD는 메타 태그보다 강력한 최신 표준으로, 검색엔진이 페이지의 속성을 정확히 이해하게 합니다.
+    function updateJsonLd(data) {
+      let script = document.querySelector('script[type="application/ld+json"]');
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        document.head.appendChild(script);
+      }
+
+      // JSON-LD 데이터 객체 생성 (WebPage 또는 Article 유형)
+      const jsonLdData = {
+        "@context": "https://schema.org",
+        "@type": "WebPage", // 페이지 전체에 대한 정보
+        "headline": document.title || window.location.hostname,
+        "dateModified": data.isoDateTime, // 핵심: 최신 업데이트 시간 기록
+        "datePublished": data.isoDateTime, // 발행일과 수정일이 같으면 최신으로 인식
+        "name": document.title || window.location.hostname
+      };
+      
+      // 스크립트 태그 내용 업데이트
+      script.textContent = JSON.stringify(jsonLdData, null, 2);
+    }
+
+    // ----------------------------------------------------------------------
+    // 5. 실행
+    // ----------------------------------------------------------------------
+    const timeData = getFormattedKstTime();
+    updateFooter(timeData);
+    updateSeoMetaTags(timeData);
+    updateJsonLd(timeData);
+  })();
+</script>
+
+
+
+</body>
 </html>
